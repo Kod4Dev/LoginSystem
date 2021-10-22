@@ -6,42 +6,29 @@ button.addEventListener('click', (event) => {
 
     event.preventDefault();
 
-    // Verificação!
-    
-    // verifyItens()
+    if(email.value == "") {
 
-    // Busca do Local Storage 
+        alert('Coloque um e-mail!'); 
+        return; 
 
-    const emailsCadastrados = JSON.parse(localStorage.getItem('cadastro'));
-    console.log(emailsCadastrados.valueOf())
-    // const splitCadastros = emailsCadastrados.split();
+    } else if(passowrd.value == "") {
 
-
-    // if(email == emailsCadastrados[2]) {
-    
-    // }
-})
-
-
-function verifyItens() {
-    if(email == "") {
-        alert('Coloque um e-mail!')
-    }
-    if(passowrd == "") {
         alert('Coloque uma senha!')
+        return;
+
     }
-}
 
+    const cadastros = JSON.parse(localStorage.getItem('cadastro'));
 
+    if(email.value == cadastros[0]['emailVerificado']) {
+        if(passowrd.value == cadastros[0]['senha']) {
 
+            alert('Usuário autenticado com sucesso');
 
+        }
+    }
 
-
-
-
-
-
-
+})
 
 
 function showPassword(){

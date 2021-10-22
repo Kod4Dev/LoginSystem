@@ -7,6 +7,7 @@ let button = document.getElementById('btn-login');
 let senha = ""
 
 button.addEventListener('click', (event) => {
+    
     event.preventDefault();
 
     verificacao()
@@ -55,11 +56,12 @@ function verifyPass() {
         error.innerHTML = "As senhas não coincidem"
     }
 
-
 }
 
 function clean() {
+
     email.value = ""
     passwordOne.value = ""
     passwordTwo.value = ""
+
 }

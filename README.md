@@ -9,5 +9,3 @@ Sobre o sistema:
     > Sistema que salva informações no Local Storage;
     > Sistema responsivo;
     > Desenvolvido em HTML5, CSS3 e JavaScript;
-
-    
