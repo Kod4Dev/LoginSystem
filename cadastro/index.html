@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
     <link rel="stylesheet" href="./style.css">
-    <script src="./script.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.google.com">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
@@ -20,15 +19,16 @@
         <form>
             <section class="inputs-container">
                 
-                <input type="email" placeholder="exemplo@gmail.com">
+                <input type="email" placeholder="exemplo@gmail.com" id="emailCadastro">
 
                 <div class="password-container">
-                    <input type="password" placeholder="Senha">
-                    <input type="password" placeholder="Confirmar Senha">
+                    <input type="password" placeholder="Senha" id="passwordOne">
+                    <input type="password" placeholder="Confirmar Senha" id="passwordTwo">
                 </div>
             </section>
 
             <button id="btn-login">Cadastrar</button>
+            <span id="error" class="error"></span>
 
             <section class="links-container">
                 <span>Entre com</span>
@@ -42,9 +42,10 @@
 
             <footer>
                 <hr>
-                <span>Já tem uma conta? <a href="https://discord.gg/furycity">Faça login</a></span>
+                <span>Já tem uma conta? <a href="../index.html">Faça login</a></span>
             </footer>
         </form>
     </main>
+    <script src="../js/cadastro.js"></script>
 </body>
 </html>

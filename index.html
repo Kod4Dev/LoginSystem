@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tela de login</title>
     <link rel="stylesheet" href="./style.css">
-    <script src="./script.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.google.com">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
@@ -20,7 +19,7 @@
         <form>
             <section class="inputs-container">
                 
-                <input type="email" placeholder="exemplo@gmail.com">
+                <input type="email" placeholder="exemplo@gmail.com" id="emailLogin">
 
                 <div class="password-container">
                     <input type="password" id="field-password" class="field-password" placeholder="Senha">
@@ -51,9 +50,10 @@
 
             <footer>
                 <hr>
-                <span>Ainda nao tem uma conta? <a href="">Cadastre-se</a></span>
+                <span>Ainda nao tem uma conta? <a href="/cadastro/index.html">Cadastre-se</a></span>
             </footer>
         </form>
     </main>
+    <script src="./js/login.js"></script>
 </body>
 </html>

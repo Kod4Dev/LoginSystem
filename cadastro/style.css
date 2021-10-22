@@ -211,3 +211,9 @@ main form footer span a {
 main form footer span a:hover {
     color: #18acfe;
 }
+
+.error {
+    margin-top: 20px;
+    color: red;
+    font-weight: bold;
+}
